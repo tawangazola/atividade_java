@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body style="background-color: rgb(0, 166, 255) ;">
+    <h1> Média</h1>
+    <p>Média:<span id="med"></span></p>
+    <p>Situação<span id="sit"></span></p>
+    <script>
+        var nota1 = parseFloat(prompt("digite a nota 1"))
+        var nota2 = parseFloat(prompt("digite a nota 2"))
+        var media = (nota1+nota2)/2;
+
+        if (media>=6){
+        var situação = "aprovado";
+        var cor="blue";
+    
+    } else {
+        var situação = "reprovado";
+        var cor="red";
+    }
+    document.getElementById('med').innerHTML=media;
+    document.getElementById('sit').innerHTML=situação;
+    document.getElementById('sit').style.color=cor;
+
+    </script>
+
+</body>
+</html>
